@@ -1079,6 +1079,7 @@ function Zooplankton({ regions }) {
 }
 
 // ─── MODULE: Fish & Marine Life ───────────────────────────────────────────────
+// module is to calculate fish and marine system risk based on bloom conditions, hypoxia, and toxin presence. It provides tailored guidance for fishermen and conservation insights for scientists. The data is sourced from CMFRI fisheries census, CMLRE HAB bulletins, and INCOIS fishery impact assessments. The module highlights which fish species are currently safe to catch, which zones to avoid, and the ecological impacts of ongoing blooms on marine biodiversity and fishery sustainability.
 function FishLife({ role, lang, regions }) {
     const displayRegions = regions || REGIONS;
     return (
