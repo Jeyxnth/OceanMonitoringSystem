@@ -1,16 +1,98 @@
-# React + Vite
+# 🌊 Coastal Bloom Monitoring System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Live Demo
 
-Currently, two official plugins are available:
+👉 https://ocean-monitoring-system.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Problem Statement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+India has a vast coastline of over 7,500 km, but there is no unified real-time system to monitor phytoplankton blooms, water quality, and marine risks.
+This leads to economic losses for fishermen, health risks from harmful algal blooms (HABs), and delayed response to marine hazards.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💡 Proposed Solution
+
+We developed an AI-powered coastal monitoring system that predicts phytoplankton blooms using environmental data and provides real-time, localized alerts through an interactive dashboard.
+
+---
+
+## ✨ Features
+
+* 📊 Real-time bloom risk prediction
+* 🗺️ Interactive coastal monitoring dashboard
+* 🌐 Multilingual alert system for fishermen
+* 📉 Data visualization of risk levels
+* 🧠 AI-based risk scoring model
+* 👥 Role-based insights (fishermen, researchers, government)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+* Vite
+
+### Backend
+
+* Node.js 
+
+### Data & Modeling
+
+* Simulated datasets inspired by INCOIS, ISRO, CPCB
+* Custom AI-based bloom prediction logic
+
+### Deployment
+
+* Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+OceanMonitoringSystem/
+│
+├── src/                # React components and logic  
+├── public/             # Static assets  
+├── backend/            # Backend (optional / future use)  
+│
+├── index.html  
+├── package.json  
+├── vite.config.js  
+├── README.md  
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/Jeyxnth/OceanMonitoringSystem.git
+cd ocean_monitoring_system
+npm install
+npm run dev
+```
+
+---
+
+## 🚀 Future Enhancements
+
+* Real-time satellite data integration
+* WebSocket-based live alerts
+* Mobile app for fishermen
+* Advanced ML models for prediction
+* Government policy recommendation system
+
+---
+
+## 📢 Conclusion
+
+This system enables faster, data-driven decision-making for coastal monitoring, helping reduce economic losses, improve safety for fishermen, and protect marine ecosystems.
+
+---
