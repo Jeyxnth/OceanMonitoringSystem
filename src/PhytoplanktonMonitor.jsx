@@ -1217,6 +1217,7 @@ function Biodiversity({ regions }) {
 }
 
 // ─── MODULE: Economic Impact (Govt only) ─────────────────────────────────────
+// it show the economic impact of the bloom on fisheries and aquaculture, including estimated revenue losses, cleanup costs, and long-term economic risks. The data is sourced from NFDB Fishery Loss Assessments, NABARD Coastal Aquaculture Risk Reports, and Ministry of Fisheries Annual Economic Surveys. The module provides a comprehensive financial overview for policymakers to understand the economic stakes and prioritize response efforts effectively.
 function Economic({ regions }) {
     const displayRegions = regions || REGIONS;
     const total = displayRegions.reduce((s, r) => s + parseInt(r.ec.replace(/[^0-9]/g, "")), 0);
