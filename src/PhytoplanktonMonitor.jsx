@@ -903,6 +903,8 @@ function BloomGuidance({ lang, regions }) {
 
 
 // ─── MODULE: Seasonal Intelligence ───────────────────────────────────────────
+// Simulates how seasonal factors like monsoons, upwelling, and lunar cycles influence bloom risk across coastal zones. Provides month-by-month insights and a visual bloom probability chart.
+
 function Seasonal({ lang, regions }) {
     const displayRegions = regions || REGIONS;
     const [fullMoon, setFullMoon] = useState(false);
@@ -911,16 +913,16 @@ function Seasonal({ lang, regions }) {
     const baseScores = [22, 18, 35, 48, 55, 78, 85, 88, 72, 58, 44, 28];
     const scores = baseScores.map(s => fullMoon ? Math.min(100, s + 5) : s);
 
-    const seasonalEvents = {
-        5: "SW Monsoon arrives Kerala coast — Arabian Sea bloom season begins",
-        6: "Arabian Sea at maximum upwelling intensity — highest bloom risk for Karnataka & Kerala",
-        7: "Arabian Sea upwelling peak — Bay of Bengal freshwater influx maximum",
-        9: "NE Monsoon begins — Palk Strait & Gulf of Mannar enter elevated bloom risk",
-        0: "Winter NE winds stabilise Bay of Bengal — anchovy spawning season",
-        1: "Stable winter baseline — low bloom risk across all zones",
-        3: "SST rising toward 32–33°C — early bloom in Gulf of Mannar",
-        4: "Pre-monsoon peak SST — Lakshadweep bloom conditions developing",
-    };
+            const seasonalEvents = {
+                5: "SW Monsoon arrives Kerala coast — Arabian Sea bloom season begins",
+                6: "Arabian Sea at maximum upwelling intensity — highest bloom risk for Karnataka & Kerala",
+                7: "Arabian Sea upwelling peak — Bay of Bengal freshwater influx maximum",
+                9: "NE Monsoon begins — Palk Strait & Gulf of Mannar enter elevated bloom risk",
+                0: "Winter NE winds stabilise Bay of Bengal — anchovy spawning season",
+                1: "Stable winter baseline — low bloom risk across all zones",
+                3: "SST rising toward 32–33°C — early bloom in Gulf of Mannar",
+                4: "Pre-monsoon peak SST — Lakshadweep bloom conditions developing",
+            };
 
     return (
         <div>
