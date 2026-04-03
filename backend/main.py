@@ -30,6 +30,7 @@ class Alert(BaseModel):
     region_id: Optional[str] = "all"
 
 # Initial base data mirroring the frontend REGIONS but with dynamic potential
+# base region mentioned
 BASE_REGIONS = [
     { "id": "mannar", "name": "Gulf of Mannar", "state": "Tamil Nadu", "risk": "High", "score": 78, "wqi": 42, "sst": 31.2, "nutrients": 78, "zoo": 4200, "hab": "PSP", "oilSpill": 7, "prob": 87, "conf": 91, "do_": 4.1, "ph": 7.2, "turbidity": 28, "tds": 780, "salinity": 35.8, "nitrate": 42, "coliform": 220, "biodiv": 52, "fish": ["Indian Mackerel", "Sardines", "Prawns"], "ec": "₹82 Cr", "safeFishing": False },
     { "id": "kerala", "name": "Arabian Sea – Kerala", "state": "Kerala", "risk": "Medium", "score": 55, "wqi": 71, "sst": 29.8, "nutrients": 61, "zoo": 2800, "hab": None, "oilSpill": 0, "prob": 61, "conf": 84, "do_": 6.8, "ph": 8.0, "turbidity": 12, "tds": 410, "salinity": 34.2, "nitrate": 18, "coliform": 45, "biodiv": 71, "fish": ["Sardines", "Anchovies", "Hilsa"], "ec": "₹31 Cr", "safeFishing": True },
