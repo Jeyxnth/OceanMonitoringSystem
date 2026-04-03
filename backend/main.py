@@ -57,6 +57,7 @@ async def get_regions():
         
         # Override with live SST and Waves
         # Use .get with a default to avoid type errors if live data is missing
+        # use float() to ensure numeric values
         sst_val = live.get("sst")
         if sst_val is not None:
             r["sst"] = float(sst_val)
